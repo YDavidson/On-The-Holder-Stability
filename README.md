@@ -1,4 +1,4 @@
-**This repository contains the code for the paper *On the Hölder Stability of Multiset and Graph Neural Networks***
+**This repository contains the code for the paper *On the Hölder Stability of Multiset and Graph Neural Networks* [ICLR 2025]**
 
 
 # Setting up the environment
