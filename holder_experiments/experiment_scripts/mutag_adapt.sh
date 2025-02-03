@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --batch_size=32 --checkpoint_every=250 --clamp_convex_weight --combine=LTSum --dataset=mutag --dropout=0 --embed_dim=32 --epochs=500 --loss=ce --lr=0.001 --metric=accuracy --model=adaptive_relu_mpnn --num_folds=10 --num_layers=2 --optimizer=adamw --out_mlp_layers=2 --patience=250 --project_name=mutag_adaptive_relu --seed=0 --summary_path=summary --sweep_yaml_path=configs/mutag/adaptive_relu.yaml --task=classification --task_level=graph --weight_decay=0

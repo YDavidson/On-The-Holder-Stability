@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --add_sum --batch_size=64 --checkpoint_every=250 --clamp_convex_weight --combine=LinearCombination --dataset=proteins --dropout=0 --embed_dim=64 --epochs=500 --loss=ce --lr=5e-05 --metric=accuracy --model=adaptive_relu_mpnn --num_folds=10 --num_layers=2 --optimizer=adamw --out_mlp_layers=1 --patience=250 --project_name=proteins_adaptive_relu --seed=0 --summary_path=summary --sweep_yaml_path=configs/proteins/adaptive_relu.yaml --task=classification --task_level=graph --weight_decay=0.1

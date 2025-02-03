@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --batch_size=32 --checkpoint_every=250 --clamp_convex_weight --combine=LinearCombination --dataset=nci109 --dropout=0.1 --embed_dim=64 --epochs=500 --loss=ce --lr=0.005 --metric=accuracy --model=adaptive_relu_mpnn --num_folds=10 --num_layers=3 --optimizer=adamw --out_mlp_layers=3 --patience=250 --project_name=nci109_adaptive_relu --seed=0 --summary_path=summary --sweep_yaml_path=configs/nci109/adaptive_relu.yaml --task=classification --task_level=graph --weight_decay=0.01

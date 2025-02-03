@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --batch_size=64 --checkpoint_every=250 --collapse_method=vector --combine=LinearCombination --dataset=ptc --dropout=0.2 --embed_dim=32 --epochs=500 --loss=ce --lr=0.01 --metric=accuracy --model=sort_mpnn --num_folds=10 --num_layers=3 --optimizer=adamw --out_mlp_layers=3 --patience=250 --project_name=ptc_sort --seed=0 --summary_path=summary --sweep_yaml_path=configs/ptc/sort.yaml --task=classification --task_level=graph --weight_decay=0

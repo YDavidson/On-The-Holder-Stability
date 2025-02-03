@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --batch_size=64 --checkpoint_every=250 --collapse_method=vector --combine=ConcatProject --dataset=proteins --dropout=0.1 --embed_dim=64 --epochs=500 --loss=ce --lr=0.01 --metric=accuracy --model=sort_mpnn --num_folds=10 --num_layers=2 --optimizer=adamw --out_mlp_layers=2 --patience=250 --project_name=proteins_sort --seed=0 --summary_path=summary --sweep_yaml_path=configs/proteins/sort.yaml --task=classification --task_level=graph --weight_decay=0

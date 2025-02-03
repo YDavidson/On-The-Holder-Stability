@@ -1,0 +1,52 @@
+program: main.py
+method: grid
+parameters:
+  gnn_type:
+    value: 'adaptive_relu'
+  num_layer:
+    values: [5]
+  emb_dim:
+    value: 50
+  batch_size:
+    value: 128
+  learning_rate:
+    values: [0.01]
+  grad_clip:
+    value: 2.0
+  epochs:
+    value: 400
+  dataset:
+    value: 'ZINC'
+  jk:
+    values: ['last']
+  drop_ratio:
+    value: 0.
+  channels:
+    values: ['96-96']
+  policy:
+    values: ['edge_deleted', 'node_deleted', 'ego_nets', 'ego_nets_plus']
+  model:
+    value: 'dss'
+  seed:
+    values: [1,2,3,4,5,6,7,8,9,10]
+  # adaptive relu parameters
+  combine:
+    values: ['ConcatProject']
+  add_sum:
+    values: [False]
+  clamp_convex_weight:
+    values: [True]
+  linspace_bias:
+    values: [True]
+  bias:
+    values: [True]
+  custom_readout:
+    values: [True]
+  relu_edge:
+    values: [False]
+  grad_clip:
+    values: [15]
+command:
+  - ${interpreter}
+  - ${program}
+  - ${args_no_boolean_flags}

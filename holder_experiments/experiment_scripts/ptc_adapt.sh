@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --batch_size=32 --checkpoint_every=250 --combine=LinearCombination --dataset=ptc --dropout=0.2 --embed_dim=16 --epochs=500 --loss=ce --lr=0.01 --metric=accuracy --model=adaptive_relu_mpnn --num_folds=10 --num_layers=3 --optimizer=adam --out_mlp_layers=1 --patience=250 --project_name=ptc_adaptive_relu --seed=0 --summary_path=summary --sweep_yaml_path=configs/ptc/adaptive_relu.yaml --task=classification --task_level=graph --weight_decay=0

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --batch_size=64 --checkpoint_every=250 --collapse_method=vector --combine=LTSum --dataset=nci1 --dropout=0.1 --embed_dim=64 --epochs=500 --loss=ce --lr=0.001 --metric=accuracy --model=sort_mpnn --num_folds=10 --num_layers=5 --optimizer=adamw --out_mlp_layers=3 --patience=250 --project_name=nci1_sort --seed=0 --summary_path=summary --sweep_yaml_path=configs/nci1/sort.yaml --task=classification --task_level=graph --weight_decay=0
